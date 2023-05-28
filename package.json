@@ -1,0 +1,14 @@
+{
+  "name": "rest-api-load-testing-k6",
+  "version": "1.0.0",
+  "description": "this is k6 script rest api load testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devadenti",
+  "license": "ISC",
+  "devDependencies": {
+    "k6-html-reporter": "^1.0.5"
+  }
+}
