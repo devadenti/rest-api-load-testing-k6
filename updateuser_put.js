@@ -2,8 +2,8 @@ import http from 'k6/http';
 import { check } from "k6";
 
 
-//POST API test for Create User
-export default function createUser(){
+//POST API test for update User
+export default function updateUser(){
     const url = 'https://reqres.in/api/users/2';
     const payload = JSON.stringify({
         name: 'morpheus',
@@ -15,7 +15,7 @@ export default function createUser(){
             'Content-Type': 'application/json',
         },
     };
-    const res = http.post(url, payload, params);
+    const res = http.put(url, payload, params);
     check(res, {
         'response code status was 200 OK': (r) => r.status == 201,
    });
